@@ -19,3 +19,5 @@ def ajouterTag(nomVideo):
         os.chdir("sh")
 
     sortie=os.popen(lien, "r").read()
+
+    os.chdir("../")

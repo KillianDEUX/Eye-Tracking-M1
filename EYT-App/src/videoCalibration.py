@@ -3,9 +3,9 @@ import cv2
 class VideoCalibration():
 
     def lire(self):
-        cap = cv2.VideoCapture('../Videos/VideoCalibrationV1.mp4')
+        cap = cv2.VideoCapture('Videos/VideoCalibrationV1.mp4')
         cv2.namedWindow("Frame", cv2.WND_PROP_FULLSCREEN)
-        cv2.setWindowProperty("Frame",cv2.WND_PROP_FULLSCREEN,cv2.WINDOW_FULLSCREEN)
+        cv2.setWindowProperty("Frame",cv2.WND_PROP_FULLSCREEN,cv2.WINDOW_NORMAL)
         if (cap.isOpened()== False):
           print("Error opening video stream or file")
 
