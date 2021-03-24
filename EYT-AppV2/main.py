@@ -74,24 +74,24 @@ canvas.pack(pady=10)
 
 # Vidéo QR code
 gen_vidQR = Button(frame, text="Générer une vidéo avec les codes QR",
-    font=("Courier",20), fg=background, command=genererQRCode)
+    font=("Courier",15), fg=background, command=genererQRCode)
 
 # Vidéo calibration
 voir_viCali = Button(frame, text="Voir la vidéo de calibration",
-    font=("Courier",20), fg=background, command=lireVideo)
+    font=("Courier",15), fg=background, command=lireVideo)
 
 # 3 vidéo
 reg_3vid = Button(frame, text="Regarder 4 vidéos simultanément",
-    font=("Courier",20), fg=background, command=lire4Videos)
+    font=("Courier",15), fg=background, command=lire4Videos)
 
 # Site pour les lunettes
 pupil_core = Button(frame, text="Accéder au site Pupil-Lab",
-    font=("Courier",20), fg=background, command=ouvrirPupilSiteWeb)
+    font=("Courier",15), fg=background, command=ouvrirPupilSiteWeb)
 
-gen_vidQR.pack(pady=15, fill=X)
-voir_viCali.pack(pady=10, fill=X)
-reg_3vid.pack(pady=10, fill=X)
-pupil_core.pack(pady=10, fill=X)
+gen_vidQR.pack(pady=10, fill=X)
+voir_viCali.pack(pady=8, fill=X)
+reg_3vid.pack(pady=8, fill=X)
+pupil_core.pack(pady=8, fill=X)
 
 frame.pack(expand=YES)
 
