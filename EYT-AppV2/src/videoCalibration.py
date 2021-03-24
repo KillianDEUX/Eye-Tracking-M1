@@ -8,7 +8,6 @@ class VideoCalibration():
 
         # Si le système n'est pas un mac
         if not platform.system() == "Darwin":
-            print("pas un mac")
             cv2.namedWindow("Frame", cv2.WND_PROP_FULLSCREEN)
             cv2.setWindowProperty("Frame",cv2.WND_PROP_FULLSCREEN,cv2.WINDOW_FULLSCREEN)
 
