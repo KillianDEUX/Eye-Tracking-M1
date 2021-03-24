@@ -48,7 +48,7 @@ class VideoPlayer(wx.App):
             success[i], img[i] = self.cap[i].read()
 
         #s'il s'agit de vidéos rectangulaire horiuzontalement on les dispose en carré et on gère leur taille
-        if(img[0].shape[1] < img[0].shape[0]):
+        if(img[0].shape[1] > img[0].shape[0]):
             cvwindow = height / 1.4
             r = (cvwindow) / img[0].shape[1]
             w = img[0].shape[0] * r
@@ -91,7 +91,7 @@ class VideoPlayer(wx.App):
                 success[i], img[i] = self.cap[i].read()
 
                 #
-                if(img[0].shape[1] < img[0].shape[0]):
+                if(img[0].shape[1] > img[0].shape[0]):
                     cvwindow = height / 1.4
                 else:
                     cvwindow = (height / 2) - 90
